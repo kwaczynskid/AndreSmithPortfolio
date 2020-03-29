@@ -1,0 +1,13 @@
+/* defined classes */
+
+.bg-primary-color {
+   background-color: #3449dc;
+}
+
+.hidden {
+   font-size: 0;
+}
+
+.relative {
+   position: relative;
+}
