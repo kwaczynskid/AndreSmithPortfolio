@@ -86,10 +86,6 @@ em {
    margin-right: 28px;
 }
 
-.block-icon .block-icon__item:last-child {
-   margin-right: 0;
-}
-
 .block-icon .block-icon__item .fas {
    color: #3449dc;
    font-size: 25px;
@@ -253,6 +249,10 @@ footer {
       float: left;
       width: 30%;
       margin-bottom: 90px;
+   }
+
+   .block-icon .block-icon__item:nth-child(3n) {
+      margin-right: 0;
    }
 
    .block.reference {
