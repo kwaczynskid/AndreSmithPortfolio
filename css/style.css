@@ -1,9 +1,12 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* IMPORT */
 @import 'reset.css';
 @import 'defined-classes.css';
 
 /* GENERAL */
 * {
+   -webkit-box-sizing: border-box;
    box-sizing: border-box;
 }
 
@@ -68,6 +71,8 @@ em {
    position: absolute;
    top: 50%;
    left: 60px;
+   -webkit-transform: translate(0, -50%);
+   -ms-transform: translate(0, -50%);
    transform: translate(0, -50%);
 }
 
@@ -147,6 +152,8 @@ header .contact p:last-child {
 }
 
 .portfolio__item-link-image img {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
    width: 100%;
    height: auto;
@@ -225,6 +232,8 @@ footer {
    header .contact {
       position: absolute;
       top: 50%;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
       transform: translate(0, -50%);
    }
 
@@ -270,6 +279,8 @@ footer {
       position: absolute;
       top: 46%;
       left: 10px;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
       transform: translate(0, -50%);
    }
 
@@ -345,11 +356,17 @@ footer {
    }
 
    .portfolio__item-link-image img {
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: -webkit-transform 0.5s;
+      -o-transition: transform 0.5s;
       transition: transform 0.5s;
+      transition: transform 0.5s, -webkit-transform 0.5s;
       opacity: 0.8;
    }
 
    .portfolio__item-link-image img:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
       transform: scale(1.2);
       opacity: 1;
    }
